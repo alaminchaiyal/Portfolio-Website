@@ -1,0 +1,57 @@
+/*Import necessary file here*/
+@import "./theme.css";
+@import"./utilities.css";
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+}
+body.no-scroll{
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+    background: var(--background-color);
+    height: 10vh;
+    z-index: 10;
+}
+.nav-links .link{
+    margin-left: 20px;
+}
+.header-container, .contact-container {
+    height: 100vh;
+}
+.about-container, .project-container, .contact-container {
+    margin-top: 180px;
+    position: relative;
+}
+.about-container{
+    height: 100vh;
+    position: relative;
+}
+.project-inner{
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);*/
+    display: flex;
+    margin: 3rem 0;
+}
+
+
