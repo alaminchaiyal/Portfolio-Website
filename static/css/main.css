@@ -38,6 +38,7 @@ a{
 }
 .header-container, .contact-container {
     height: 100vh;
+    position: relative;
 }
 .about-container, .project-container, .contact-container {
     margin-top: 180px;
