@@ -24,33 +24,55 @@ a{
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0 20px 0;
+    background: var(--background-color);
+    height: 60px;
+}
+.navScroll {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 40px 0;
-    background: var(--background-color);
-    height: 10vh;
     z-index: 10;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
 }
+@-webkit-keyframes fadeInDown{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .nav-links .link{
     margin-left: 20px;
 }
-.header-container, .contact-container {
+.header-container, .about-container{
     height: 100vh;
     position: relative;
 }
-.about-container, .project-container, .contact-container {
+.about-container, .project-container, #contact, #footer {
     margin-top: 180px;
     position: relative;
 }
-.about-container{
-    height: 100vh;
-    position: relative;
-}
 .project-inner{
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);*/
     display: flex;
     margin: 3rem 0;
 }
